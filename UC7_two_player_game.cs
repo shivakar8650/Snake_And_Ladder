@@ -40,7 +40,7 @@ namespace Snake_and_Ladder
                         spacialCase = 1;
                         starting_position += Outcome;
                         Final_player = i;
-                        Console.Write("  palyer"+i+" is win ! ");
+                        Console.Write("  palyer"+(i+1)+" is win ! ");
                     }
                     else if ((starting_position + Outcome) > 100)
                     {
@@ -67,7 +67,7 @@ namespace Snake_and_Ladder
 
             }
             player_position[i] = starting_position;
-            Console.WriteLine("player"+i+" postion is :" + starting_position);
+            Console.WriteLine("player"+(i+1)" postion is :" + starting_position);
 
             if (repeat == false)
                 change(i);
@@ -91,7 +91,7 @@ namespace Snake_and_Ladder
             while (player_position[0] <= 100 && player_position[1] <= 100 && spacialCase == 0);
                      
 
-            Console.WriteLine("the final postion of player"+player+" :" + player_position[player]);
+            Console.WriteLine("the final postion of player"+(player+1)+" :" + player_position[player]);
             Console.WriteLine("no. of times dice throw :" + count);
         }
 
